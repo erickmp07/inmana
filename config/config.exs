@@ -8,20 +8,24 @@
 use Mix.Config
 
 config :inmana,
-  ecto_repos: [Inmana.Repo]
+    ecto_repos: [Inmana.Repo]
+
+config :inmana, Inmana.Repo,
+    migration_primary_key: [type: :binary_id],
+    migration_foreign_key: [type: :binary_id],
 
 # Configures the endpoint
 config :inmana, InmanaWeb.Endpoint,
-  url: [host: "localhost"],
-  secret_key_base: "zZmksaZuc6DzJqWCD/UOJtQdGeZ44p/ixFgp5qvrj03H184H9AW17i2FPp1eM52c",
-  render_errors: [view: InmanaWeb.ErrorView, accepts: ~w(json), layout: false],
-  pubsub_server: Inmana.PubSub,
-  live_view: [signing_salt: "2XDS00gI"]
+    url: [host: "localhost"],
+    secret_key_base: "zZmksaZuc6DzJqWCD/UOJtQdGeZ44p/ixFgp5qvrj03H184H9AW17i2FPp1eM52c",
+    render_errors: [view: InmanaWeb.ErrorView, accepts: ~w(json), layout: false],
+    pubsub_server: Inmana.PubSub,
+    live_view: [signing_salt: "2XDS00gI"]
 
 # Configures Elixir's Logger
 config :logger, :console,
-  format: "$time $metadata[$level] $message\n",
-  metadata: [:request_id]
+    format: "$time $metadata[$level] $message\n",
+    metadata: [:request_id]
 
 # Use Jason for JSON parsing in Phoenix
 config :phoenix, :json_library, Jason
