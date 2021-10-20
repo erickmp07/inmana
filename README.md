@@ -63,6 +63,15 @@ body: {
   "name": "Restaurant's name",
 	"email": "email@domain.com"
 }
+
+# POST (JSON) - Create Supply
+http://localhost:{port}/api/supplies
+body: {
+  "description": "Supply's description",
+	"expiration_date": "2021-01-01",
+	"responsible": "Name",
+	"restaurant_id": "1c671fb7-39b1-4234-ac10-7b7e6651ade9"
+}
 ```
 
 ## Contributing
