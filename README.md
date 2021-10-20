@@ -31,7 +31,6 @@ mix deps.get
 - Create and migrate the database:
 ```bash
 mix ecto.setup
-mix ecto.migrate
 ```
 
 ## Usage
