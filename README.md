@@ -72,6 +72,9 @@ body: {
 	"responsible": "Name",
 	"restaurant_id": "1c671fb7-39b1-4234-ac10-7b7e6651ade9"
 }
+
+# GET - Show Supply
+http://localhost:{port}/api/supplies/:id
 ```
 
 ## Contributing
