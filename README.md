@@ -31,7 +31,6 @@ mix deps.get
 - Create and migrate the database:
 ```bash
 mix ecto.setup
-mix ecto.migrate
 ```
 
 ## Usage
@@ -53,6 +52,7 @@ This project was developed with the following technologies:
 - [Credo](https://github.com/rrrene/credo/)
 - [Jason](https://github.com/michalmuskala/jason)
 - [PostgreSQL](https://www.postgresql.org/)
+- [Bamboo](https://github.com/thoughtbot/bamboo)
 
 ## API
 
@@ -64,6 +64,18 @@ body: {
   "name": "Restaurant's name",
 	"email": "email@domain.com"
 }
+
+# POST (JSON) - Create Supply
+http://localhost:{port}/api/supplies
+body: {
+  "description": "Supply's description",
+	"expiration_date": "2021-01-01",
+	"responsible": "Name",
+	"restaurant_id": "1c671fb7-39b1-4234-ac10-7b7e6651ade9"
+}
+
+# GET - Show Supply
+http://localhost:{port}/api/supplies/:id
 ```
 
 ## Contributing
