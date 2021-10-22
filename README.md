@@ -40,6 +40,11 @@ Start Phoenix endpoint:
 mix phx.server
 ```
 
+NOTE: To run the tests:
+```bash
+mix test
+```
+
 The application can be accessed at [`localhost:4000`](http://localhost:4000).
 
 ## Technologies
