@@ -78,6 +78,8 @@ body: {
 http://localhost:{port}/api/supplies/:id
 ```
 
+NOTE: The API schedules and sends one email by week to the restaurants with the list of the supplies that are about to expire on that week.
+
 ## Contributing
 
 PRs and stars are always welcome.
