@@ -52,6 +52,7 @@ This project was developed with the following technologies:
 - [Credo](https://github.com/rrrene/credo/)
 - [Jason](https://github.com/michalmuskala/jason)
 - [PostgreSQL](https://www.postgresql.org/)
+- [Bamboo](https://github.com/thoughtbot/bamboo)
 
 ## API
 
